@@ -1,6 +1,5 @@
 package org.mcupdater.forgeloader;
 
-import net.minecraftforge.installer.ProgressFrame;
 import net.minecraftforge.installer.SimpleInstaller;
 import net.minecraftforge.installer.actions.*;
 import net.minecraftforge.installer.json.Install;
@@ -16,7 +15,7 @@ import java.util.function.Predicate;
 
 public class ForgeLoader {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		File installPath = new File(args[0]);
 		String side = args[1];
 
